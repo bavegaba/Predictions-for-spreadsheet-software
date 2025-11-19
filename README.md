@@ -16,6 +16,11 @@ How is it used?
 
 This solution is useful in company-employee environments to learn more details about a company's demands and know what training is appropriate, because it is aimed at users who want to emigrate to work in other countries, since the use of Excel, according to the figures, is more necessary in English-speaking countries.
 
+[Excel](https://www.freepik.es/foto-gratis/concepto-estrategia-estadisticas-informe-informacion-datos_17132602.htm#fromView=search&page=1&position=2&uuid=4964b0ac-3402-4ecc-9cb0-efbc3ab10e53&query=excel)
+[U.K](https://www.freepik.es/foto-gratis/vista-trasera-joven-mirando-rio-tamesis_903089.htm#fromView=search&page=1&position=3&uuid=92df5ffb-9be1-4c15-bb79-ca7523fdacfe&query=United+Kingdom)
+[pandemic](https://www.freepik.es/foto-gratis/persona-que-pone-mascarilla-medica-tierra_14668469.htm#fromView=search&page=1&position=0&uuid=c6d49623-45e9-421e-9458-147c6a17bbd3&query=Covid+19)
+
+
 import numpy as np
 
 countries = [
@@ -24,16 +29,13 @@ countries = [
     "China", "Japan", "Australia", "Canada"
 ]
 
-# Variable X: % Excel Usage
+
 x_usage = np.array([87.3, 89.7, 91.2, 76.4, 82.1, 84.6, 81.3, 79.8, 88.9, 85.2, 88.1, 90.4])
 
-# Variable Y: % Employers Requiring Excel
+
 y_demand = np.array([78.5, 82.1, 85.3, 65.8, 71.4, 73.2, 69.7, 68.4, 76.3, 74.1, 79.6, 83.7])
 
-# New Variable: Education Level (Mapped to numbers)
-# Medium-High = 1, High = 2, Very High = 3
-# Order corresponds to the 'countries' list above:
-# COL(High), USA(V.High), UK(V.High), DEU(Med-High), FRA(High), BRA(High), MEX(High), IND(High), CHN(High), JPN(High), AUS(V.High), CAN(V.High)
+
 x_education = np.array([2, 3, 3, 1, 2, 2, 2, 2, 2, 2, 3, 3]) 
 
 def train_model(x, y):
@@ -60,15 +62,13 @@ def predict_inverse(target_y, m, b):
     return predicted_x
 
 
-# --- SCENARIO A: INVERSE PREDICTION (Market Targets) ---
-# Training Usage vs. Demand
+
 m1, b1, r2_1 = train_model(x_usage, y_demand)
 
 print("--- SCENARIO A: Inverse Prediction (Market Targets) ---")
 print(f"Model R^2: {r2_1:.4f}")
 
-# Question: If a company wants to enter a market where 80% of employers require Excel,
-# what level of general Excel usage should the country have?
+
 target_demand = 80.0
 required_usage = predict_inverse(target_demand, m1, b1)
 
@@ -76,27 +76,24 @@ print(f"To achieve {target_demand}% labor demand, the country needs approx usage
 print("")
 
 
-# --- SCENARIO B: EDUCATION VS DEMAND ---
-# Does the education level predict labor demand?
+
 m2, b2, r2_2 = train_model(x_education, y_demand)
 
 print("--- SCENARIO B: Education Level vs. Demand ---")
 print(f"Correlation (R^2): {r2_2:.4f} (If low, the relationship is not strictly linear)")
 
-# Prediction for 'Very High' education level (Value = 3)
+
 predicted_demand = m2 * 3 + b2
 print(f"If education level is 'Very High' (3), expected demand is: {predicted_demand:.2f}%")
 print("")
 
 
-# --- SCENARIO C: GAP ANALYSIS ---
-# Gap = Usage - Demand (People who know Excel but don't necessarily need it for work)
-# Does this gap widen or shrink as usage increases?
+
 gap = x_usage - y_demand  # Numpy array subtraction
 m3, b3, r2_3 = train_model(x_usage, gap)
 
 print("--- SCENARIO C: Talent Gap Evolution ---")
-# If m3 is positive, the gap widens. If negative, it shrinks.
+
 trend = "increases" if m3 > 0 else "decreases"
 
 print(f"Slope of the gap: {m3:.4f}")
