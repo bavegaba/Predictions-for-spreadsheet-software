@@ -25,8 +25,6 @@ This is how you make a list, if you need one:
 
 The environment in which my solution operates is the educational-work environment and is aimed at audiences ranging from professionals to students, since they will be facing a competitive market with various factors.
 
-Images will make your README look nice!
-Once you upload an image to your repository, you can link link to it like this (replace the URL with file path, if you've uploaded an image to Github.)
 ![Excel](gente-de-negocios-trabajando-en-una-computadora-portatil-en-una-reunion.jpg)
 ![Pandemic](persona-que-pone-una-mascarilla-medica-en-la-tierra.jpg)
 ![U. K](vista-trasera-de-un-joven-mirando-el-rio-tamesis.jpg)
@@ -117,7 +115,7 @@ print(f"Prediction: In a country with 95% usage, the gap would be {(m3 * 95 + b3
 
 [Twitter API](https://developer.twitter.com/en/docs)
 [Covid-19](https://www.theguardian.com/politics/2020/oct/05/how-excel-may-have-caused-loss-of-16000-covid-tests-in-england)
-[Test and traceTest and trace](https://www.nytimes.com/2020/10/05/world/europe/uk-testing-johnson-hancock.html)
+[Test and trace](https://www.nytimes.com/2020/10/05/world/europe/uk-testing-johnson-hancock.html)
 [Office 365 data](https://www.statista.com/statistics/983321/worldwide-office-365-user-numbers-by-country/?srsltid=AfmBOoqu62cVKTo9TrOO-9OlbVDRHpikq7_7I4EYS5QzSTBlb3kYY__i)
 [Company surveys](https://www.enterprisesurveys.org/en/data)
 [Global survey by Microsoft](https://www.microsoft.com/en-us/digitalsafety/research/global-online-safety-survey)
@@ -125,17 +123,12 @@ print(f"Prediction: In a country with 95% usage, the gap would be {(m3 * 95 + b3
 
 ## Challenges
 
-What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
+My project doesn't address the issue of Excel being used for more complex problems; some people use it simply as a calculator, and this data is ignored by my project. A limitation of my project is that wealthier countries likely have more computers and, therefore, higher demand. Research should also be conducted in smaller, economically disadvantaged countries to mitigate the biases arising from its use.
 
 ## What next?
 
-How could your project grow and become something even more? What kind of skills, what kind of assistance would you  need to move on? 
-
+My project should be more widely seen in other regions such as Latin America or Africa so that it can serve as a basis when choosing a tool, but for this to happen, more research is needed from these nations on these labor-educational challenges, in terms of data.
 
 ## Acknowledgments
 
-* list here the sources of inspiration 
-* do not use code, images, data etc. from others without permission
-* when you have permission to use other people's materials, always mention the original creator and the open source / Creative Commons licence they've used
-  <br>For example: [Sleeping Cat on Her Back by Umberto Salvagnin](https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg#filelinks) / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
-* etc
+* My family, friends and my university. 
