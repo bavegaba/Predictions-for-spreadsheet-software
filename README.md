@@ -15,7 +15,6 @@ The objective of this project is to provide an example based on Excel, as it is 
 
 My idea addresses market-related problems, which is very useful for public or educational policy. This problem isn't very common, but if we analyze the data, it's crucial because, as a personal motivation, I've observed that in the UK, COVID-19 diagnoses were lost due to a lack of knowledge about Excel or switching to another alternative. Therefore, this topic is interesting because of its implications in the workplace.
 
-This is how you make a list, if you need one:
 * problem 1: Losing medical diagnoses
 * problem 2: Supply versus demand: is it reliable?
 * problem 3: Invest in Excel education
