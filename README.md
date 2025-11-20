@@ -30,10 +30,8 @@ Once you upload an image to your repository, you can link link to it like this (
 ![Excel](gente-de-negocios-trabajando-en-una-computadora-portatil-en-una-reunion.jpg)
 ![Pandemic](persona-que-pone-una-mascarilla-medica-en-la-tierra.jpg)
 ![U. K](vista-trasera-de-un-joven-mirando-el-rio-tamesis.jpg)
-If you need to resize images, you have to use an HTML tag, like this:
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg" width="300">
 
-This is how you create code examples:
+Code example:
 ```
 import numpy as np
 
