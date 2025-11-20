@@ -114,14 +114,14 @@ print(f"Prediction: In a country with 95% usage, the gap would be {(m3 * 95 + b3
 
 
 ## Data sources and AI methods
-Where does your data come from? Do you collect it yourself or do you use data collected by someone else?
-If you need to use links, here's an example:
-[Twitter API](https://developer.twitter.com/en/docs)
 
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+[Twitter API](https://developer.twitter.com/en/docs)
+[Covid-19](https://www.theguardian.com/politics/2020/oct/05/how-excel-may-have-caused-loss-of-16000-covid-tests-in-england)
+[Test and traceTest and trace](https://www.nytimes.com/2020/10/05/world/europe/uk-testing-johnson-hancock.html)
+[Office 365 data](https://www.statista.com/statistics/983321/worldwide-office-365-user-numbers-by-country/?srsltid=AfmBOoqu62cVKTo9TrOO-9OlbVDRHpikq7_7I4EYS5QzSTBlb3kYY__i)
+[Company surveys](https://www.enterprisesurveys.org/en/data)
+[Global survey by Microsoft](https://www.microsoft.com/en-us/digitalsafety/research/global-online-safety-survey)
+
 
 ## Challenges
 
